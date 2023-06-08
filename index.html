@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <script src="script.js" defer></script>
+   <title>what day is it</title>
+</head>
+<body>
+   <div id="text">
+    <h2>know specific date</h2>
+    <h3><u>calculator</u></h3>
+   </div>
+   <main>
+   <h1>what day is it</h1>
+
+   <div id="dmy-container">
+   <div id="date-container">
+    <label>date:</label>
+    <select id="date-dd" onclick="changeDatesBasedOnMonthAndYear()">
+     <option value="select">select date</option>
+     <option value="1">1</option>
+     <option value="2">2</option>
+     <option value="3">3</option>
+     <option value="4">4</option>
+     <option value="5">5</option>
+     <option value="6">6</option>
+     <option value="7">7</option>
+     <option value="8">8</option>
+     <option value="9">9</option>
+     <option value="10">10</option>
+     <option value="11">11</option>
+     <option value="12">12</option>
+     <option value="13">13</option>
+     <option value="14">14</option>
+     <option value="15">15</option>
+     <option value="16">16</option>
+     <option value="17">17</option>
+     <option value="18">18</option>
+     <option value="19">19</option>
+     <option value="20">20</option>
+     <option value="21">21</option>
+     <option value="22">22</option>
+     <option value="23">23</option>
+     <option value="24">24</option>
+     <option value="25">25</option>
+     <option value="26">26</option>
+     <option value="27">27</option>
+     <option value="28">28</option>
+     <option value="29">29/option>
+     <option value="30">30</option>
+     <option value="31">31</option>
+    </select>
+   </div>
+   <div id="month-container">
+   <label>month:</label>
+   <select id="month-dd" onchange="changeDate('month')" >
+       <option value="select" >select month</option>
+       <option value="1">jan</option>
+       <option value="2">feb</option>
+       <option value="3">mar</option>
+       <option value="4">apr</option>
+       <option value="5">may</option>
+       <option value="6">jun</option>
+       <option value="7">jul</option>
+       <option value="8">aug</option>
+       <option value="9">sep</option>
+       <option value="10">oct</option>
+       <option value="11">nov</option>
+       <option value="11">dec</option>
+   </select>
+
+   </div>
+   <div id="year-container">
+     <label>year:</label>
+     <input id="year-ip" type="number" min="1" placeholder="year" oninput="changeDate('year')">
+
+
+   </div>
+   </div>
+   <div>
+   <button class="button" id="day-button" type="submit" onclick="whatIsDay()">whats is day</button> 
+   <button class="button" id="reset-button" onclick="reset()" >reset</button>
+
+   </div>
+   <div id="result">
+   <pre>the day on <span id="date-span"></span><span id="verb">is</span> <span id="day"></span></pre>
+   </div>
+   </main>
+
+   <div id="written-by-container">
+  <h3>written by <a href="https://github.com/gonzalote99" target="_blank" >me</a> </h3>
+
+   </div>
+
+</body>
+</html>
